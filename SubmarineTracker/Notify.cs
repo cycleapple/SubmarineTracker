@@ -189,7 +189,7 @@ public class Notify
     private static SeString GenerateMessage(string name)
     {
         return new SeStringBuilder()
-               .AddUiForeground("[Submarine Tracker] ", 540)
+               .AddUiForeground("[潛水艇追蹤器] ", 540)
                .AddUiForeground(Language.NotificationChatReturn.Format(name), 566)
                .BuiltString;
     }
@@ -197,7 +197,7 @@ public class Notify
     private static SeString RepairMessage(string name)
     {
         return new SeStringBuilder()
-               .AddUiForeground("[Submarine Tracker] ", 540)
+               .AddUiForeground("[潛水艇追蹤器] ", 540)
                .AddUiForeground(Language.NotificationChatRepair.Format(name), 43)
                .BuiltString;
     }

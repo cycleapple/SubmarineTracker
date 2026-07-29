@@ -15,7 +15,7 @@ public class ReturnOverlay : Window, IDisposable
 
     private ImRaii.Color PushedColor = null!;
 
-    public ReturnOverlay(Plugin plugin) : base("Submarines: 0|0###submarineOverlay")
+    public ReturnOverlay(Plugin plugin) : base("潛水艇：0|0###submarineOverlay")
     {
         this.SizeConstraints = new WindowSizeConstraints
         {
@@ -128,7 +128,7 @@ public class ReturnOverlay : Window, IDisposable
                             ? Plugin.Configuration.OverlayAllDone : Plugin.Configuration.OverlayNoneDone;
         bool mainHeader;
         using (ImRaii.PushColor(ImGuiCol.Header, color))
-            mainHeader = ImGui.CollapsingHeader("All###overlayAll", ImGuiTreeNodeFlags.DefaultOpen);
+            mainHeader = ImGui.CollapsingHeader("全部###overlayAll", ImGuiTreeNodeFlags.DefaultOpen);
 
         SetHeaderText(timerSub, windowWidth, y);
 

@@ -159,7 +159,7 @@ public partial class BuilderWindow
         if (!combo.Success)
             return;
 
-        if (ImGui.Selectable("None"))
+        if (ImGui.Selectable("無"))
         {
             CommonSelection = 0;
             CurrentBuild.NotOptimized();

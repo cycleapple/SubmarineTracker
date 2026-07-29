@@ -173,25 +173,27 @@ public class Plugin : IDalamudPlugin
 
     private void LanguageChanged(string langCode)
     {
-        Language.Culture = new CultureInfo(langCode);
+        Language.Culture = new CultureInfo(langCode.StartsWith("zh", StringComparison.OrdinalIgnoreCase)
+                                               ? "zh-TW"
+                                               : langCode);
     }
 
     [Command("/stracker")]
-    [HelpMessage("Opens the tracker")]
+    [HelpMessage("開啟潛水艇追蹤器")]
     private void OnCommand(string command, string args)
     {
         MainWindow.IsOpen ^= true;
     }
 
     [Command("/sbuilder")]
-    [HelpMessage("Opens the builder")]
+    [HelpMessage("開啟潛水艇配置工具")]
     private void OnBuilderCommand(string command, string args)
     {
         BuilderWindow.IsOpen ^= true;
     }
 
     [Command("/sloot")]
-    [HelpMessage("Opens the custom loot overview\n/sloot copy - Export loot history to clipboard in CSV format using current settings")]
+    [HelpMessage("開啟自訂戰利品總覽\n/sloot copy - 依目前設定將戰利品歷史記錄以 CSV 格式匯出至剪貼簿")]
     private void OnLootCommand(string command, string args)
     {
         switch (args.Trim())
@@ -206,21 +208,21 @@ public class Plugin : IDalamudPlugin
     }
 
     [Command("/shelpy")]
-    [HelpMessage("Opens the helper window with lots of helpful information")]
+    [HelpMessage("開啟包含潛水艇相關資訊的助手視窗")]
     private void OnUnlockedCommand(string command, string args)
     {
         HelpyWindow.IsOpen ^= true;
     }
 
     [Command("/sconf")]
-    [HelpMessage("Opens the config")]
+    [HelpMessage("開啟潛水艇追蹤器設定")]
     private void OnConfigCommand(string command, string args)
     {
         ConfigWindow.IsOpen ^= true;
     }
 
     [Command("/soverlay")]
-    [HelpMessage("Opens the overlay")]
+    [HelpMessage("開啟返航浮動視窗")]
     private void OnOverlayCommand(string command, string args)
     {
         ReturnOverlay.IsOpen ^= true;

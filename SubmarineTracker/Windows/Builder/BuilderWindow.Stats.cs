@@ -61,7 +61,7 @@ public partial class BuilderWindow
             }
         }
 
-        ImGui.TextUnformatted("Calculated Stats:");
+        ImGui.TextUnformatted("計算後性能：");
 
         using (var table = ImRaii.Table("##statsColumn", 6))
         {

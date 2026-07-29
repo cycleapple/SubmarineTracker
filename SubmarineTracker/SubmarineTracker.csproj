@@ -2,8 +2,8 @@
 <Project Sdk="Dalamud.NET.Sdk/13.0.0">
     <PropertyGroup>
         <Authors>Infi</Authors>
-        <Version>2.0.2.1</Version>
-        <Description>You do not talk about Fight Club, same for Submarines</Description>
+        <Version>2.0.2.2</Version>
+        <Description>追蹤公會潛水艇的配置、航線、返航時間與戰利品</Description>
         <PackageProjectUrl>https://github.com/cycleapple/SubmarineTracker/tree/api13-tw</PackageProjectUrl>
     </PropertyGroup>
 

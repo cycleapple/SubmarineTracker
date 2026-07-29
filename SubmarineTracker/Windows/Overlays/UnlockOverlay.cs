@@ -16,7 +16,7 @@ public class UnlockOverlay : Window, IDisposable
 
     private ImRaii.Color PushedColor = null!;
 
-    public UnlockOverlay(Plugin plugin) : base("Unlock Overlay##SubmarineTracker")
+    public UnlockOverlay(Plugin plugin) : base("解鎖浮動視窗##SubmarineTracker")
     {
         Size = OriginalSize;
 

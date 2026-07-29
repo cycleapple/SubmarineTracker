@@ -1,22 +1,19 @@
 {
     "Author": "Infi",
-    "Name": "Submarine Tracker",
-    "Punchline": "You do not talk about Fight Club, same for Submarines",
-    "Description": "+ Tracker for current builds, routes and times \n+ Builder to improve, solve builds and optimize EXP\n+ Configurable notification for return and repairs \n+ Helpy filled useful information\n+ Custom loot overview with history and export\n+ Multiple overlays to help with daily tasks \n+ Supports multiple FCs  ",
+    "Name": "潛水艇追蹤器",
+    "Punchline": "追蹤公會潛水艇的航程、返航時間與戰利品。",
+    "Description": "+ 追蹤目前配置、航線與返航時間\n+ 配置求解與經驗值最佳化工具\n+ 可自訂返航與修理通知\n+ 提供實用資訊的助手介面\n+ 包含歷史記錄及匯出功能的自訂戰利品總覽\n+ 多種浮動視窗協助日常操作\n+ 支援多個公會",
     "InternalName": "SubmarineTracker",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/cycleapple/SubmarineTracker/tree/api13-tw",
     "Tags": [
-        "Submarine",
-        "Tracker",
-        "Builder",
-        "Loot",
-        "Optimizer",
-        "Notifications",
-        "Helper",
-        "Solver",
-        "Routes",
-        "Sub",
-        "Overlay"
+        "潛水艇",
+        "追蹤",
+        "配置",
+        "戰利品",
+        "最佳化",
+        "通知",
+        "航線",
+        "浮動視窗"
     ]
 }
